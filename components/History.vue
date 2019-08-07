@@ -46,6 +46,7 @@ export default {
 
 .history-title {
   font-size: 60px;
+  margin-bottom: 30px;
   /* background-color: lightblue; */
 }
 .history-table {

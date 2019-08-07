@@ -65,7 +65,7 @@ export default {
 }
 .work-title {
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 </style>

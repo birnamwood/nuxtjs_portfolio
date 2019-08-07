@@ -50,6 +50,7 @@ export default {
 
 .profile-title {
   font-size: 60px;
+  margin-bottom: 30px;
   /* background-color: lightblue; */
 }
 .profile-table {
