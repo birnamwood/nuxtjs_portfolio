@@ -1,6 +1,6 @@
 <template>
 <header>
-   <p @click="titleclick" class="title">Top</p>
+   <a href="/" @click="titleclick" class="title">Top</a>
 
     <nav>
       <a href="" @click="profileclick" class="menu">Profile</a>
