@@ -69,6 +69,26 @@ export default {
   display: inline-block;
 }
 
+@media (max-width: 640px) {
+  h2 {
+    font-size: 26px;
+  }
+  .imagebox {
+    float:none;
+    margin: auto;
+    width: 90%;
+  }
+  .imagebox img {
+    width: 90%;
+  }
+  .content {
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+    float: none;
+  }
+}
+
 @media (max-width: 480px) {
   h2 {
     font-size: 24px;
@@ -87,6 +107,5 @@ export default {
     margin: auto;
     float: none;
   }
-
 }
 </style>

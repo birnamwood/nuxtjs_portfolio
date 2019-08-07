@@ -71,6 +71,21 @@ export default {
   background-color: lightblue;
 }
 
+@media (max-width: 640px) {
+  .profile-box {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .profile-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .profile-table {
+  font-size:18px;
+  padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .profile-box {
     padding-top: 50px;

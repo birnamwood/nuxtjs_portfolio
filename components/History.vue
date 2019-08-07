@@ -68,6 +68,21 @@ export default {
   background-color: lightblue;
 }
 
+@media (max-width: 640px) {
+  .history-box {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .history-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .history-table {
+    font-size:18px;
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .history-box {
     padding-top: 50px;

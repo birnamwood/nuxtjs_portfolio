@@ -125,6 +125,17 @@ export default {
 }
 
 @media (max-width: 640px) {
+  .skillbox {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .skill-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .tool-table {
+  font-size:18px;
+  }
   .tool-list {
     width: 60%;
   }

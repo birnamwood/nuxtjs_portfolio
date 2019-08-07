@@ -60,6 +60,21 @@ export default {
       transform: translateY(-100px);
 }
 
+@media (max-width: 640px) {
+  .main {
+    height: 700px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin: auto;
+  }
+  .maintext {
+    width: 100%;
+    margin-top: 300px;
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 480px) {
   .main {
     height: 500px;

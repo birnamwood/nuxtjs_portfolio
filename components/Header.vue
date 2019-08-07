@@ -85,6 +85,15 @@ nav {
   padding: 1em 1em 0.5em;
 }
 
+@media (max-width: 640px) {
+  header {
+    font-size: 24px;
+  }
+  .menu {
+    padding: 5px;
+  }
+}
+
 @media (max-width: 480px) {
   header {
     height: 50px;
