@@ -4,8 +4,7 @@
           <div class="skill-title">
             <i class="fas fa-tools" > Skill</i>
           </div>
-          
-          <no-ssr>
+
           <carousel :per-page="1"
                     :speed="1000">
             <slide>
@@ -41,7 +40,6 @@
               </table>
             </slide>
           </carousel>
-          </no-ssr>
 
       </div>
   </div>
