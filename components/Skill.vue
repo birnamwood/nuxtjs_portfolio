@@ -125,9 +125,23 @@ export default {
 }
 
 @media (max-width: 640px) {
-  .qualification-list {
+  .tool-list {
     width: 60%;
+  }
 }
+
+@media (max-width: 480px) {
+  .skill-box {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .skill-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .tool-table {
+  font-size:16px;
+  }
 }
 
 </style>

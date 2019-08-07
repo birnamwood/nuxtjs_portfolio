@@ -68,4 +68,15 @@ export default {
   margin-bottom: 30px;
 }
 
+@media (max-width: 480px) {
+  .work-box {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .work-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
 </style>
