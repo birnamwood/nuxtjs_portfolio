@@ -1,12 +1,12 @@
 <template>
 <header>
-   <a href="/" class="title">Top</a>
+   <a href="" @click="titleclick" class="title">Top</a>
 
     <nav>
-      <a href="/" class="menu">Profile</a>
-      <a href="/" class="menu">History</a>
-      <a href="/" class="menu">Skill</a>
-      <a href="/" class="menu">Work</a>
+      <a href="" class="menu">Profile</a>
+      <a href="" class="menu">History</a>
+      <a href="" class="menu">Skill</a>
+      <a href="" class="menu">Work</a>
     </nav>
   </header>
 </template>
@@ -16,6 +16,12 @@ import smoothScroll from 'vue-smoothscroll'
 
 export default {
   methods: {
+    titleclick() {
+      event.preventDefault()
+      this.$SmoothScroll(
+        document.querySelector('#mainview')
+      )
+    },
 
   }
 }

@@ -1,15 +1,18 @@
 <template>
   <section class="container">
      <Header/>
+        <Mainview id="mainview"/>
   </section>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
+import Mainview from '~/components/Mainview.vue'
 
 export default {
   components: {
     Header,
+    Mainview,
   },
 }
 </script>
