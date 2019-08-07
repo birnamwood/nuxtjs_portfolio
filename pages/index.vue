@@ -8,11 +8,13 @@
 <script>
 import Header from '~/components/Header.vue'
 import Mainview from '~/components/Mainview.vue'
+import Profile from '~/components/Profile.vue'
 
 export default {
   components: {
     Header,
     Mainview,
+    Profile,
   },
 }
 </script>
