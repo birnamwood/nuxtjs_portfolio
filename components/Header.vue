@@ -13,7 +13,6 @@
 
 <script>
 import smoothScroll from 'vue-smoothscroll'
-Vue.use(vueSmoothScroll)
 
 export default {
   methods: {
