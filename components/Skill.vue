@@ -165,6 +165,9 @@ export default {
   margin: 10px;
   float: left;
 }
+.VueCarousel-slide {
+  background: lightblue;
+}
 
 @media (max-width: 640px) {
   .qualification-list {
