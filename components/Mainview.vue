@@ -30,7 +30,6 @@ export default {
   padding-top: 70px;
   padding-bottom: 45px;
   margin: auto;
-
 }
 .mainview {
   height: 100%;
@@ -59,5 +58,20 @@ export default {
 .v-leave-to {
       opacity: 0;
       transform: translateY(-100px);
+}
+
+@media (max-width: 480px) {
+  .main {
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin: auto;
+  }
+  .maintext {
+    width: 100%;
+    margin-top: 200px;
+    font-size: 24px;
+  }
 }
 </style>
