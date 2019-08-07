@@ -2,6 +2,7 @@
   <section class="container">
      <Header/>
         <Mainview id="mainview"/>
+        <Profile/>
   </section>
 </template>
 
