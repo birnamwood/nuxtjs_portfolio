@@ -7,12 +7,11 @@
 </template>
 
 <script>
-import smoothScroll from 'vue-smoothscroll'
 import Header from '~/components/Header.vue'
 import Mainview from '~/components/Mainview.vue'
 import Profile from '~/components/Profile.vue'
 
-Vue.use(vueSmoothScroll)
+
 
 export default {
   components: {
