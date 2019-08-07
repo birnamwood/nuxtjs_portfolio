@@ -15,12 +15,12 @@ module.exports = {
     ]
   },
   //
-  // router: {
-  //   base: '/nuxtjs_portfolio/'
-  // },
+  router: {
+    base: '/nuxtjs_portfolio/'
+  },
   //
-  plugins: [{ src: '~/plugins/vue-carousel', ssr: true }],
-  plugins: [{ src: '~/plugins/vue-smoothscroll', ssr: false }],
+  plugins: [{ src: '~/plugins/vue-carousel', mode: 'client' }],
+  plugins: [{ src: '~/plugins/vue-smoothscroll', mode: 'client' }],
   //
 
   /*
