@@ -2,7 +2,7 @@
   <div class="profile">
       <div class="profile-box">
           <div class="profile-title">
-            <i class="fas fa-user-circle" > Profile</i>
+              <i class="fas fa-user-circle"> Profile</i>
           </div>
           <table class="profile-table">
             <tbody>
@@ -32,10 +32,6 @@ export default {
   }
 }
 </script>
-
-<style module>
-  @import "https://use.fontawesome.com/releases/v5.6.1/css/all.css";
-</style>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

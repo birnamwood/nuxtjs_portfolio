@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/nuxtjs_portfolio/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/nuxtjs_portfolio/favicon.ico' },
+      { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.6.1/css/all.css"},
     ]
   },
   //
@@ -21,17 +22,6 @@ module.exports = {
   plugins: [{ src: '~/plugins/vue-carousel', ssr: false }],
   plugins: [{ src: '~/plugins/vue-smoothscroll', ssr: false }],
   //
-  modules: [
-    'nuxt-fontawesome'
-  ],
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
-    ]
-  },
 
   /*
   ** Customize the progress bar color
