@@ -13,12 +13,26 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/nuxtjs_portfolio/favicon.ico' }
     ]
   },
+  //
   router: {
     base: '/nuxtjs_portfolio/'
   },
   //
   plugins: [{ src: '~/plugins/vue-carousel', ssr: false }],
   plugins: [{ src: '~/plugins/vue-smoothscroll', ssr: false }],
+  //
+  modules: [
+    'nuxt-fontawesome'
+  ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
+
   /*
   ** Customize the progress bar color
   */

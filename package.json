@@ -14,7 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0",
     "vue-carousel": "^0.18.0",
     "vue-smoothscroll": "^0.2.0"
   },
