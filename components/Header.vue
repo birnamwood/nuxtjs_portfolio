@@ -85,4 +85,9 @@ nav {
   padding: 1em 1em 0.5em;
 }
 
+@media (max-width: 640px) {
+  .menu {
+    padding: 5px;
+  }
+}
 </style>
