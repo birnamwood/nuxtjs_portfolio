@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'mainview',
+  name: 'Mainview',
   data() {
     return {
       message: 'Welcome to My Portfolio',
