@@ -6,6 +6,7 @@
         <History id="history"/>
         <Skill id="skill"/>
         <Work id="work"/>
+      <Footer/>
   </section>
 </template>
 
@@ -16,6 +17,7 @@ import Profile from '~/components/Profile.vue'
 import History from '~/components/History.vue'
 import Skill from '~/components/Skill.vue'
 import Work from '~/components/Work.vue'
+import Footer from '~/components/Footer.vue'
 
 
 export default {
@@ -26,6 +28,7 @@ export default {
     History,
     Skill,
     Work,
+    Footer,
   },
 }
 </script>
