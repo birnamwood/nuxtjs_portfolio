@@ -19,9 +19,9 @@
             </slide>
 
             <slide>
-              <h2 class="tool-light-title">技術（勉強中）</h2>
-              <div class="tool-light-table">
-                <ul class="tool-light-list">
+              <h2 class="tool-title">技術（勉強中）</h2>
+              <div class="tool-table">
+                <ul class="tool-list">
                   <li v-for="(toollight,index) in toollights" :key="index">
                     {{toollight.name}}
                   </li>
@@ -30,9 +30,9 @@
            </slide>
 
             <slide>
-              <h2 class="qualification-title">資格</h2>
-              <div class="qualification-table">
-                <ul class="qualification-list">
+              <h2 class="tool-title">資格</h2>
+              <div class="tool-table">
+                <ul class="tool-list">
                   <li v-for="(qualification,index) in qualifications" :key="index">
                       {{qualification.name}}
                   </li>
@@ -103,64 +103,25 @@ export default {
   font-size: 60px;
 }
 
-.qualification-title {
-  margin-bottom: 10px;
-}
-.qualification-table {
-  width: 90%;
-  font-size:20px;
-  text-align: left;
-  margin: auto;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px gray;
-}
-.qualification-list {
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-.qualification-list li {
-  padding: 10px;
-}
-
 .tool-title {
   margin-bottom: 10px;
 }
 .tool-table {
   width: 90%;
-  font-size:20px;
+  font-size: 20px;
   text-align: left;
   margin: auto;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px gray;
 }
+
 .tool-list {
+  width: 40%;
   margin: auto;
 }
 .tool-list li {
-  width: 45%;
   margin: 10px;
-  float: left;
-}
-
-.tool-light-title {
-  margin-bottom: 10px;
-}
-.tool-light-table {
-  width: 90%;
-  font-size:20px;
-  text-align: left;
-  margin: auto;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px gray;
-}
-.tool-light-list {
-  margin: auto;
-}
-.tool-light-list li {
-  width: 45%;
-  margin: 10px;
-  float: left;
+  padding: 5px;
 }
 
 @media (max-width: 640px) {
