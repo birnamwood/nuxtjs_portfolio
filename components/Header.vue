@@ -40,6 +40,12 @@ export default {
         document.querySelector('#skill')
       )
     },
+    workclick() {
+      event.preventDefault()
+      this.$SmoothScroll(
+        document.querySelector('#work')
+      )
+    },
   }
 }
 
