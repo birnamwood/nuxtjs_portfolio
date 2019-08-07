@@ -4,6 +4,7 @@
         <Mainview id="mainview"/>
         <Profile id="profile"/>
         <History id="history"/>
+        <Skill id="skill"/>
   </section>
 </template>
 
@@ -12,6 +13,7 @@ import Header from '~/components/Header.vue'
 import Mainview from '~/components/Mainview.vue'
 import Profile from '~/components/Profile.vue'
 import History from '~/components/History.vue'
+import Skill from '~/components/Skill.vue'
 
 
 export default {
@@ -20,6 +22,7 @@ export default {
     Mainview,
     Profile,
     History,
+    Skill,
   },
 }
 </script>

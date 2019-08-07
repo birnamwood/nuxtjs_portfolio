@@ -16,6 +16,9 @@ module.exports = {
   // router: {
   //   base: '/nuxtjs_portfolio/'
   // },
+  //
+  plugins: [{ src: '~/plugins/vue-carousel', ssr: false }],
+  plugins: [{ src: '~/plugins/vue-smoothscroll', ssr: false }],
   /*
   ** Customize the progress bar color
   */
