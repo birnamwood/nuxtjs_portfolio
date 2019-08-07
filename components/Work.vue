@@ -26,7 +26,8 @@ export default {
         {
           name: "ポートフォリオ",
           image: PortfolioImage,
-          url: "",
+          url_site: "Github Pages",
+          url: "https://birnamwood.github.io/nuxtjs_portfolio/",
           src_site: "Github",
           src: "https://github.com/birnamwood/vuejs_portfolio",
           skill: "HTTPS / CSS / Vue.js / Nuxt.js",
@@ -35,6 +36,7 @@ export default {
         {
           name: "検査結果照会システム",
           image: NoImage,
+          url_site: "",
           url: "",
           src_site: "",
           src: "",
