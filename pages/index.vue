@@ -2,7 +2,8 @@
   <section class="container">
      <Header/>
         <Mainview id="mainview"/>
-        <Profile/>
+        <Profile id="profile"/>
+        <History id="history"/>
   </section>
 </template>
 
@@ -10,7 +11,7 @@
 import Header from '~/components/Header.vue'
 import Mainview from '~/components/Mainview.vue'
 import Profile from '~/components/Profile.vue'
-
+import History from '~/components/History.vue'
 
 
 export default {
@@ -18,6 +19,7 @@ export default {
     Header,
     Mainview,
     Profile,
+    History,
   },
 }
 </script>

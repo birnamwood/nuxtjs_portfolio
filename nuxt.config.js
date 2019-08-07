@@ -13,9 +13,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/nuxtjs_portfolio/favicon.ico' }
     ]
   },
-  router: {
-    base: '/nuxtjs_portfolio/'
-  },
+  // router: {
+  //   base: '/nuxtjs_portfolio/'
+  // },
   /*
   ** Customize the progress bar color
   */

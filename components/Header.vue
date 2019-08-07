@@ -16,19 +16,6 @@ import smoothScroll from 'vue-smoothscroll'
 
 export default {
   methods: {
-    titleclick() {
-      event.preventDefault()
-      this.$SmoothScroll(
-        document.querySelector('#mainview')
-      )
-    },
-    profileclick() {
-      event.preventDefault()
-      this.$SmoothScroll(
-        document.querySelector('#profile')
-      )
-    },
-
   }
 }
 
