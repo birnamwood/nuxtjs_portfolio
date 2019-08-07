@@ -1,6 +1,6 @@
 <template>
 <header>
-   <a href="" @click="titleclick" class="title">Top</a>
+   <p @click="titleclick" class="title">Top</p>
 
     <nav>
       <a href="" @click="profileclick" class="menu">Profile</a>
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import smoothScroll from 'vue-smoothscroll'
 
 export default {
   methods: {
