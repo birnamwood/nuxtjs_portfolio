@@ -9,35 +9,35 @@
                     :speed="1000">
             <slide>
               <h2 class="tool-title">技術（実務経験あり）</h2>
-              <table class="tool-table">
+              <div class="tool-table">
                 <ul class="tool-list">
                   <li v-for="(tool,index) in tools" :key="index">
                     {{tool.name}}
                   </li>
                 </ul>
-              </table>
+              </div>
             </slide>
 
             <slide>
               <h2 class="tool-light-title">技術（勉強中）</h2>
-              <table class="tool-light-table">
+              <div class="tool-light-table">
                 <ul class="tool-light-list">
                   <li v-for="(toollight,index) in toollights" :key="index">
                     {{toollight.name}}
                   </li>
                 </ul>
-              </table>
+              </div>
            </slide>
 
             <slide>
               <h2 class="qualification-title">資格</h2>
-              <table class="qualification-table">
+              <div class="qualification-table">
                 <ul class="qualification-list">
                   <li v-for="(qualification,index) in qualifications" :key="index">
                       {{qualification.name}}
                   </li>
                 </ul>
-              </table>
+              </div>
             </slide>
           </carousel>
 
@@ -133,7 +133,6 @@ export default {
   margin: auto;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px gray;
-  margin-bottom: 10px;
 }
 .tool-list {
   margin: auto;
