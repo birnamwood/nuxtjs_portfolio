@@ -137,7 +137,7 @@ export default {
   font-size:18px;
   }
   .tool-list {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -151,7 +151,10 @@ export default {
     margin-bottom: 10px;
   }
   .tool-table {
-  font-size:16px;
+    font-size:16px;
+  }
+  .tool-list {
+    width: 90%;
   }
 }
 
