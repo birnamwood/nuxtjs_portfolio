@@ -21,6 +21,7 @@ module.exports = {
   //
   plugins: [{ src: '~/plugins/vue-carousel', mode: 'client' }],
   plugins: [{ src: '~/plugins/vue-smoothscroll', mode: 'client' }],
+  plugins: [{ src: '~/plugins/ga.js', mode: 'client' }],
   //
 
   /*
