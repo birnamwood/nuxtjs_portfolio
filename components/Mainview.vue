@@ -25,7 +25,7 @@ export default {
 <style scoped>
 
 .main {
-  height: 1000px;
+  height: 100vh;
   width: 100%;
   padding-top: 70px;
   padding-bottom: 45px;
@@ -44,7 +44,7 @@ export default {
   text-align: center;
   background-color: rgb(200,250,200,0.5);
   display: inline-block;
-  margin-top: 400px;
+  margin-top: 45vh;
   font-size: 36px;
   font-family: fantasy;
 }
@@ -77,15 +77,12 @@ export default {
 
 @media (max-width: 480px) {
   .main {
-    height: 500px;
     width: 100%;
-    padding-top: 50px;
     padding-bottom: 0px;
     margin: auto;
   }
   .maintext {
     width: 100%;
-    margin-top: 200px;
     font-size: 24px;
   }
 }
