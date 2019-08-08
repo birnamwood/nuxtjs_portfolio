@@ -22,7 +22,7 @@ export default {
   name: 'profile',
   data() {
     return {
-      name: "ｊ．ｙ",
+      name: "J.Yoshimura",
       age: "29歳",
       address: "京都府",
       hobby: "バイク、旅行",
