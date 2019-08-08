@@ -116,12 +116,13 @@ export default {
 }
 
 .tool-list {
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 .tool-list li {
   margin: 10px;
   padding: 5px;
+  list-style: none;
 }
 
 @media (max-width: 640px) {
@@ -137,7 +138,7 @@ export default {
   font-size:18px;
   }
   .tool-list {
-    width: 70%;
+    width: 65%;
   }
 }
 
@@ -154,7 +155,7 @@ export default {
     font-size:16px;
   }
   .tool-list {
-    width: 90%;
+    width: 80%;
   }
 }
 
