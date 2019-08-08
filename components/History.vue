@@ -97,7 +97,8 @@ export default {
   padding-bottom: 20px;
   }
   .history-table th,.history-table td {
-    min-width: 110px;
+    min-width: 100px;
+    padding: 10px;
   }
 }
 

@@ -101,6 +101,7 @@ export default {
   }
   .profile-table td {
     min-width: 100px;
+    padding: 10px;
   }
 }
 
