@@ -96,6 +96,9 @@ export default {
   font-size:16px;
   padding-bottom: 20px;
   }
+  .history-table th,.history-table td {
+    min-width: 110px;
+  }
 }
 
 </style>

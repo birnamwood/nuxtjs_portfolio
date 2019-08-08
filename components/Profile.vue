@@ -81,8 +81,8 @@ export default {
     margin-bottom: 10px;
   }
   .profile-table {
-  font-size:18px;
-  padding-bottom: 20px;
+    font-size:18px;
+    padding-bottom: 20px;
   }
 }
 
@@ -96,8 +96,11 @@ export default {
     margin-bottom: 10px;
   }
   .profile-table {
-  font-size:16px;
-  padding-bottom: 20px;
+    font-size:16px;
+    padding-bottom: 20px;
+  }
+  .profile-table td {
+    min-width: 100px;
   }
 }
 
