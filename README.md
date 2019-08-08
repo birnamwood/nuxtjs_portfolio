@@ -1,6 +1,8 @@
 # portfolio
 
-> Nuxt.js project
+> ポートフォリオ公開用のサイトです。
+> 使用言語: HTML / CSS / Vue.js / Nuxt.js
+> 使用プラグイン: vue-carousel / vue-smoothscroll
 
 ## Build Setup
 
