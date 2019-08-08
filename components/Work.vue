@@ -29,9 +29,9 @@ export default {
           url_site: "Github Pages",
           url: "https://birnamwood.github.io/nuxtjs_portfolio/",
           src_site: "Github",
-          src: "https://github.com/birnamwood/vuejs_portfolio",
+          src: "https://github.com/birnamwood/nuxtjs_portfolio/",
           skill: "HTTPS / CSS / Vue.js / Nuxt.js",
-          text: "ポートフォリオ公開用サイトです。",
+          text: "ポートフォリオ公開用サイトです。Vue.jsで作成し、Nuxt.jsに移行しました。",
         },
         {
           name: "検査結果照会システム",
