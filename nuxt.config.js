@@ -19,9 +19,12 @@ module.exports = {
     base: '/nuxtjs_portfolio/'
   },
   //
-  plugins: [{ src: '~/plugins/ga.js', mode: 'client' }],
-  plugins: [{ src: '~/plugins/vue-carousel', mode: 'client' }],
-  plugins: [{ src: '~/plugins/vue-smoothscroll', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/ga.js', mode: 'client' },
+    { src: '~/plugins/vue-carousel', mode: 'client' },
+    { src: '~/plugins/vue-smoothscroll', mode: 'client' }
+  ],
+
 
   //
 
