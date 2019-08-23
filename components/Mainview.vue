@@ -1,20 +1,60 @@
 <template>
   <div class="main">
-      <div class="mainview">
-        <transition appear>
-          <p  v-show="show" class="maintext">{{message}}</p>
-        </transition>
+      <div class="mainview" @click='click'>
+          <p class="maintext" v-if='entered'>{{message}}</p>
+          <p class="maintext" v-if='!entered'>{{message2}}</p>
        </div>
   </div>
 </template>
 
 <script>
+import {mapGetters, mapMutations} from 'vuex'
+import {TweenMax, Expo, Elastic} from 'gsap'
+
 export default {
   name: 'Mainview',
   data() {
     return {
       message: 'Welcome to My Portfolio',
-      show: true,
+      message2: 'Click!',
+    }
+  },
+  watch: {
+    entered(val) {
+      this.flash()
+      val ? this.enter() : this.leave()
+    }
+  },
+  computed: {
+    ...mapGetters({
+      entered: 'entered'
+    })
+  },
+  methods: {
+    ...mapMutations({ click: 'click'}),
+    flash () {
+      requestAnimationFrame(() => {
+        TweenMax.to(this.$refs, 1, {
+          ease: Expo.easeIn,
+          scale: 2
+        })
+      })
+    },
+    enter () {
+      requestAnimationFrame(() => {
+        TweenMax.to(this.$refs, 1, {
+          ease: Expo.easeOut,
+          scale: 1.5
+        })
+      })
+    },
+    leave () {
+      requestAnimationFrame(() => {
+        TweenMax.to(this.$refs, 1, {
+          ease: Expo.easeOut,
+          scale: 1.0
+        })
+      })
     }
   }
 }
@@ -47,17 +87,6 @@ export default {
   margin-top: 45vh;
   font-size: 36px;
   font-family: fantasy;
-}
-
-.v-enter-active,
-.v-leave-active {
-      transition: 5s ease-out;
-}
-
-.v-enter,
-.v-leave-to {
-      opacity: 0;
-      transform: translateY(-100px);
 }
 
 @media (max-width: 640px) {
