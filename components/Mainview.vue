@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-      <div class="mainview" >
-          <p id="maintext" @click='click' >{{message}}</p>
+      <div class="mainview">
+          <p id="maintext" @click='click'>{{message}}</p>
        </div>
   </div>
 </template>
@@ -33,25 +33,28 @@ export default {
     ...mapMutations({ click: 'click'}),
     flash () {
       requestAnimationFrame(() => {
-        TweenMax.to("#maintext", 0.5, {
-          ease: Expo.easeIn,
-          scale: 1.5
+        TweenMax.to("#maintext", 1, {
+          rotation: 360,
+          // backgroundColor: 'transparent',
         })
       })
     },
     enter () {
       requestAnimationFrame(() => {
-        TweenMax.to("#maintext", 0.5, {
-          ease: Expo.easeOut,
-          color: 'red',
+        TweenMax.staggerTo("#maintext", 1, {
+          y: -100,
+          repeat: -1,
+          color: 'black',
+          yoyo: true,
         })
       })
     },
     leave () {
       requestAnimationFrame(() => {
-        TweenMax.to("#maintext", 0.5, {
-          ease: Expo.easeOut,
-          color: 'green',
+        TweenMax.staggerTo("#maintext", 1, {
+          y: 100,
+          repeat: -1,
+          yoyo: true,
         })
       })
     },
