@@ -1,8 +1,7 @@
 <template>
   <div class="main">
-      <div class="mainview" @click='click'>
-          <p class="maintext" v-if='entered'>{{message}}</p>
-          <p class="maintext" v-if='!entered'>{{message2}}</p>
+      <div class="mainview" >
+          <p id="maintext" @click='click' >{{message}}</p>
        </div>
   </div>
 </template>
@@ -15,12 +14,12 @@ export default {
   name: 'Mainview',
   data() {
     return {
-      message: 'Welcome to My Portfolio',
-      message2: 'Click!',
+      message: 'Click!',
     }
   },
   watch: {
     entered(val) {
+      this.change()
       this.flash()
       val ? this.enter() : this.leave()
     }
@@ -34,27 +33,30 @@ export default {
     ...mapMutations({ click: 'click'}),
     flash () {
       requestAnimationFrame(() => {
-        TweenMax.to(this.$refs, 1, {
+        TweenMax.to("#maintext", 0.5, {
           ease: Expo.easeIn,
-          scale: 2
+          scale: 1.5
         })
       })
     },
     enter () {
       requestAnimationFrame(() => {
-        TweenMax.to(this.$refs, 1, {
+        TweenMax.to("#maintext", 0.5, {
           ease: Expo.easeOut,
-          scale: 1.5
+          color: 'red',
         })
       })
     },
     leave () {
       requestAnimationFrame(() => {
-        TweenMax.to(this.$refs, 1, {
+        TweenMax.to("#maintext", 0.5, {
           ease: Expo.easeOut,
-          scale: 1.0
+          color: 'green',
         })
       })
+    },
+    change() {
+      this.message = "Welcome to my Portfolio"
     }
   }
 }
@@ -78,7 +80,7 @@ export default {
   background-size: cover;
 }
 
-.maintext {
+#maintext {
   width: 100%;
   color: white;
   text-align: center;
@@ -97,7 +99,7 @@ export default {
     padding-bottom: 0px;
     margin: auto;
   }
-  .maintext {
+  #maintext {
     width: 100%;
     margin-top: 300px;
     font-size: 30px;
@@ -110,7 +112,7 @@ export default {
     padding-bottom: 0px;
     margin: auto;
   }
-  .maintext {
+  #maintext {
     width: 100%;
     font-size: 24px;
   }
