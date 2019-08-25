@@ -1,7 +1,28 @@
 <template>
   <div class="main">
       <div class="mainview">
-          <p id="maintext" @click='click'>{{message}}</p>
+          <div class="maintext" @click='click'>
+              <div class="box box0">{{message[0]}}</div>
+              <div class="box box1">{{message[1]}}</div>
+              <div class="box box2">{{message[2]}}</div>
+              <div class="box box3">{{message[3]}}</div>
+              <div class="box box4">{{message[4]}}</div>
+              <div class="box box5">{{message[5]}}</div>
+              <div class="box box6">{{message[6]}}</div>
+              <div class="box box7">{{message[7]}}</div>
+              <div class="box box8">{{message[8]}}</div>
+              <div class="box box9">{{message[9]}}</div>
+              <div class="box box0">{{message[10]}}</div>
+              <div class="box box1">{{message[11]}}</div>
+              <div class="box box2">{{message[12]}}</div>
+              <div class="box box3">{{message[13]}}</div>
+              <div class="box box4">{{message[14]}}</div>
+              <div class="box box5">{{message[15]}}</div>
+              <div class="box box6">{{message[16]}}</div>
+              <div class="box box7">{{message[17]}}</div>
+              <div class="box box8">{{message[18]}}</div>
+              <div class="box box9">{{message[19]}}</div>
+          </div>
        </div>
   </div>
 </template>
@@ -14,7 +35,10 @@ export default {
   name: 'Mainview',
   data() {
     return {
-      message: 'Click!',
+      message:  ["_", "P", "l", "e", "a", "s", "e", "_", "C", "l",
+                 "i", "c", "k", "_", "H", "e", "r", "e", "!", "_"],
+      message2: ["W", "e", "l", "c", "o", "m", "e", "T", "o", "M",
+                 "y", "P", "o", "r", "t", "f", "o", "l", "i", "o"]
     }
   },
   watch: {
@@ -33,33 +57,37 @@ export default {
     ...mapMutations({ click: 'click'}),
     flash () {
       requestAnimationFrame(() => {
-        TweenMax.to("#maintext", 1, {
-          rotation: 360,
+        TweenMax.staggerTo(".box", 0.5, {
+          y: -50,
+          repeat: -1,
+          yoyo: true,
+          boxShadow:"0px 0px 50px black",
+          backgroundColor: 'transparent',
           // backgroundColor: 'transparent',
-        })
+        }, 0.3)
       })
     },
     enter () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo("#maintext", 1, {
-          y: -100,
-          repeat: -1,
-          color: 'black',
-          yoyo: true,
-        })
+        TweenMax.staggerTo(".box", 0.5, {
+          backgroundColor: 'green',
+        },0.3)
       })
     },
     leave () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo("#maintext", 1, {
-          y: 100,
+        TweenMax.staggerTo(".box", 0.5, {
+          backgroundColor: 'blue',
+          y: 50,
           repeat: -1,
           yoyo: true,
-        })
+        },0.3)
       })
     },
     change() {
-      this.message = "Welcome to my Portfolio"
+      //メッセージの書き換え
+      console.log("test")
+      this.message = this.message2;
     }
   }
 }
@@ -83,15 +111,20 @@ export default {
   background-size: cover;
 }
 
-#maintext {
+.maintext {
   width: 100%;
   color: white;
   text-align: center;
-  background-color: rgb(200,250,200,0.5);
   display: inline-block;
   margin-top: 45vh;
   font-size: 36px;
   font-family: fantasy;
+}
+.box {
+  width: 5%;
+  height: 100%;
+  float: left;
+  background-color: rgb(200,250,200,0.5);
 }
 
 @media (max-width: 640px) {
@@ -102,7 +135,7 @@ export default {
     padding-bottom: 0px;
     margin: auto;
   }
-  #maintext {
+  .maintext {
     width: 100%;
     margin-top: 300px;
     font-size: 30px;
@@ -115,7 +148,7 @@ export default {
     padding-bottom: 0px;
     margin: auto;
   }
-  #maintext {
+  .maintext {
     width: 100%;
     font-size: 24px;
   }
