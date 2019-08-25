@@ -69,24 +69,20 @@ export default {
     },
     enter () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.5, {
+        TweenMax.staggerTo(".box", 1, {
           backgroundColor: 'green',
-        },0.3)
+        },0.5)
       })
     },
     leave () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.5, {
+        TweenMax.staggerTo(".box", 1, {
           backgroundColor: 'blue',
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-        },0.3)
+        },0.5)
       })
     },
     change() {
       //メッセージの書き換え
-      console.log("test")
       this.message = this.message2;
     }
   }
