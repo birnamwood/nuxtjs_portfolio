@@ -65,14 +65,14 @@ export default {
     },
     enter () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.5, {
+        TweenMax.staggerTo(".box", 1, {
           y : "-50px",
         },0.1)
       })
     },
     leave () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.5, {
+        TweenMax.staggerTo(".box", 1, {
           y: "50px",
         },0.1)
       })
