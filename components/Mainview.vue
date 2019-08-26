@@ -58,24 +58,22 @@ export default {
     flash () {
       requestAnimationFrame(() => {
         TweenMax.staggerTo(".box", 0.5, {
+          otationY: 360,
           backgroundColor: 'transparent',
-          color: 'white'
         }, 0.1)
       })
     },
     enter () {
       requestAnimationFrame(() => {
         TweenMax.staggerTo(".box", 0.5, {
-          scale: 1.5,
-          opacity: 100,
+          y : "-50px",
         },0.1)
       })
     },
     leave () {
       requestAnimationFrame(() => {
         TweenMax.staggerTo(".box", 0.5, {
-          scale: 1,
-          opacity: 0,
+          y: "50px",
         },0.1)
       })
     },
