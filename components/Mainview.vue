@@ -2,26 +2,26 @@
   <div class="main">
       <div class="mainview" @click='click'>
           <div class="maintext" >
-              <span class="box">{{message[0]}}</span>
-              <span class="box">{{message[1]}}</span>
-              <span class="box">{{message[2]}}</span>
-              <span class="box">{{message[3]}}</span>
-              <span class="box">{{message[4]}}</span>
-              <span class="box">{{message[5]}}</span>
-              <span class="box">{{message[6]}}</span>
-              <span class="box">{{message[7]}}</span>
-              <span class="box">{{message[8]}}</span>
-              <span class="box">{{message[9]}}</span>
-              <span class="box">{{message[10]}}</span>
-              <span class="box">{{message[11]}}</span>
-              <span class="box">{{message[12]}}</span>
-              <span class="box">{{message[13]}}</span>
-              <span class="box">{{message[14]}}</span>
-              <span class="box">{{message[15]}}</span>
-              <span class="box">{{message[16]}}</span>
-              <span class="box">{{message[17]}}</span>
-              <span class="box">{{message[18]}}</span>
-              <span class="box">{{message[19]}}</span>
+              <div class="box">&nbsp;{{message[0]}}</div>
+              <div class="box">&nbsp;{{message[1]}}</div>
+              <div class="box">&nbsp;{{message[2]}}</div>
+              <div class="box">&nbsp;{{message[3]}}</div>
+              <div class="box">&nbsp;{{message[4]}}</div>
+              <div class="box">&nbsp;{{message[5]}}</div>
+              <div class="box">&nbsp;{{message[6]}}</div>
+              <div class="box">&nbsp;{{message[7]}}</div>
+              <div class="box">&nbsp;{{message[8]}}</div>
+              <div class="box">&nbsp;{{message[9]}}</div>
+              <div class="box">&nbsp;{{message[10]}}</div>
+              <div class="box">&nbsp;{{message[11]}}</div>
+              <div class="box">&nbsp;{{message[12]}}</div>
+              <div class="box">&nbsp;{{message[13]}}</div>
+              <div class="box">&nbsp;{{message[14]}}</div>
+              <div class="box">&nbsp;{{message[15]}}</div>
+              <div class="box">&nbsp;{{message[16]}}</div>
+              <div class="box">&nbsp;{{message[17]}}</div>
+              <div class="box">&nbsp;{{message[18]}}</div>
+              <div class="box">&nbsp;{{message[19]}}</div>
           </div>
        </div>
   </div>
@@ -35,8 +35,8 @@ export default {
   name: 'Mainview',
   data() {
     return {
-      message:  [ "_", "P ", "l", "e", "a", "s", "e", "_", "C", "l",
-                 "i", "c", "k", "_", "H", "e", "r", "e", "!", "_"],
+      message:  [ "", "", "", "", "", "", "", "C", "l", "i",
+                 "c", "k", "!", "", "", "", "", "", "", ""],
       message2: ["W", "e", "l", "c", "o", "m", "e", "T", "o", "M",
                  "y", "P", "o", "r", "t", "f", "o", "l", "i", "o"]
     }
@@ -57,7 +57,7 @@ export default {
     ...mapMutations({ click: 'click'}),
     flash () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.1, {
+        TweenMax.staggerTo(".box", 0.5, {
           backgroundColor: 'transparent',
           color: 'white'
         }, 0.1)
@@ -65,15 +65,17 @@ export default {
     },
     enter () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.1, {
-          scale: 2,
+        TweenMax.staggerTo(".box", 0.5, {
+          scale: 1.5,
+          opacity: 100,
         },0.1)
       })
     },
     leave () {
       requestAnimationFrame(() => {
-        TweenMax.staggerTo(".box", 0.1, {
+        TweenMax.staggerTo(".box", 0.5, {
           scale: 1,
+          opacity: 0,
         },0.1)
       })
     },
@@ -107,8 +109,8 @@ export default {
   width: 100%;
   color: white;
   text-align: center;
-  display: inline-block;
   margin-top: 45vh;
+  display: inline-block;
   font-size: 36px;
   font-family: fantasy;
 }
