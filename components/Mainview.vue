@@ -1,27 +1,27 @@
 <template>
   <div class="main">
-      <div class="mainview">
-          <div class="maintext" @click='click'>
-              <span class="box box0">{{message[0]}}</span>
-              <span class="box box1">{{message[1]}}</span>
-              <span class="box box2">{{message[2]}}</span>
-              <span class="box box3">{{message[3]}}</span>
-              <span class="box box4">{{message[4]}}</span>
-              <span class="box box5">{{message[5]}}</span>
-              <span class="box box6">{{message[6]}}</span>
-              <span class="box box7">{{message[7]}}</span>
-              <span class="box box8">{{message[8]}}</span>
-              <span class="box box9">{{message[9]}}</span>
-              <span class="box box0">{{message[10]}}</span>
-              <span class="box box1">{{message[11]}}</span>
-              <span class="box box2">{{message[12]}}</span>
-              <span class="box box3">{{message[13]}}</span>
-              <span class="box box4">{{message[14]}}</span>
-              <span class="box box5">{{message[15]}}</span>
-              <span class="box box6">{{message[16]}}</span>
-              <span class="box box7">{{message[17]}}</span>
-              <span class="box box8">{{message[18]}}</span>
-              <span class="box box9">{{message[19]}}</span>
+      <div class="mainview" @click='click'>
+          <div class="maintext" >
+              <span class="box">{{message[0]}}</span>
+              <span class="box">{{message[1]}}</span>
+              <span class="box">{{message[2]}}</span>
+              <span class="box">{{message[3]}}</span>
+              <span class="box">{{message[4]}}</span>
+              <span class="box">{{message[5]}}</span>
+              <span class="box">{{message[6]}}</span>
+              <span class="box">{{message[7]}}</span>
+              <span class="box">{{message[8]}}</span>
+              <span class="box">{{message[9]}}</span>
+              <span class="box">{{message[10]}}</span>
+              <span class="box">{{message[11]}}</span>
+              <span class="box">{{message[12]}}</span>
+              <span class="box">{{message[13]}}</span>
+              <span class="box">{{message[14]}}</span>
+              <span class="box">{{message[15]}}</span>
+              <span class="box">{{message[16]}}</span>
+              <span class="box">{{message[17]}}</span>
+              <span class="box">{{message[18]}}</span>
+              <span class="box">{{message[19]}}</span>
           </div>
        </div>
   </div>
@@ -59,6 +59,7 @@ export default {
       requestAnimationFrame(() => {
         TweenMax.staggerTo(".box", 0.1, {
           backgroundColor: 'transparent',
+          color: 'white'
         }, 0.1)
       })
     },
@@ -66,7 +67,6 @@ export default {
       requestAnimationFrame(() => {
         TweenMax.staggerTo(".box", 0.1, {
           scale: 2,
-          color: 'rgb(200,250,200,0.5)'
         },0.1)
       })
     },
@@ -74,7 +74,6 @@ export default {
       requestAnimationFrame(() => {
         TweenMax.staggerTo(".box", 0.1, {
           scale: 1,
-          color: 'white'
         },0.1)
       })
     },

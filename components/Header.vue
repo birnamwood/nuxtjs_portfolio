@@ -1,13 +1,13 @@
 <template>
 <header>
-   <a href="" @click="titleclick" class="title">Top</a>
+   <a href="" class="title" @click="titleclick">Top</a>
 
-    <nav>
-      <a href="" @click="profileclick" class="menu">Profile</a>
-      <a href="" @click="historyclick" class="menu">History</a>
-      <a href="" @click="skillclick" class="menu">Skill</a>
-      <a href="" @click="workclick" class="menu">Work</a>
-    </nav>
+    <div class="nav">
+      <a href="" class="menu p-menu" @click="profileclick">Profile</a>
+      <a href="" class="menu h-menu" @click="historyclick">History</a>
+      <a href="" class="menu s-menu" @click="skillclick">Skill</a>
+      <a href="" class="menu w-menu" @click="workclick">Work</a>
+    </div>
   </header>
 </template>
 
@@ -17,30 +17,81 @@ import SmoothScroll from 'vue-smoothscroll'
 export default {
   methods: {
     titleclick() {
+      requestAnimationFrame(() => {
+        TweenMax.to(".title", 0.5, {
+          lotation: 360,
+          scale: 1.5,
+          onComplete : function(){
+            TweenMax.to(".title", 0.5, {
+              scale: 1,
+            })
+          }
+        })
+      })
       event.preventDefault()
       this.$SmoothScroll(
         document.querySelector('#mainview')
       )
     },
     profileclick() {
+      requestAnimationFrame(() => {
+        TweenMax.to(".p-menu", 0.5, {
+          scale: 1.5,
+          onComplete : function(){
+            TweenMax.to(".p-menu", 0.5, {
+              scale: 1,
+            })
+          }
+        })
+      })
       event.preventDefault()
       this.$SmoothScroll(
         document.querySelector('#profile')
       )
     },
     historyclick() {
+      requestAnimationFrame(() => {
+        TweenMax.to(".h-menu", 0.5, {
+          scale: 1.5,
+          onComplete : function(){
+            TweenMax.to(".h-menu", 0.5, {
+              scale: 1,
+            })
+          },
+        })
+      })
       event.preventDefault()
       this.$SmoothScroll(
         document.querySelector('#history')
       )
     },
     skillclick() {
+      requestAnimationFrame(() => {
+        TweenMax.to(".s-menu", 0.5, {
+          scale: 1.5,
+          onComplete : function(){
+            TweenMax.to(".s-menu", 0.5, {
+              scale: 1,
+            })
+          },
+        })
+      })
       event.preventDefault()
       this.$SmoothScroll(
         document.querySelector('#skill')
       )
     },
     workclick() {
+      requestAnimationFrame(() => {
+        TweenMax.to(".w-menu", 0.5, {
+          scale: 1.5,
+          onComplete : function(){
+            TweenMax.to(".w-menu", 0.5, {
+              scale: 1,
+            })
+          },
+        })
+      })
       event.preventDefault()
       this.$SmoothScroll(
         document.querySelector('#work')
@@ -50,8 +101,7 @@ export default {
 }
 
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+import {TweenMax, Expo, Elastic} from 'gsap'
 <style scoped>
 
 header {
@@ -75,14 +125,15 @@ header {
   text-decoration: none;
 }
 
-nav {
+.nav {
   float: right;
 }
 
 .menu {
+  float:left;
   color: inherit;
   text-decoration: none;
-  padding: 1em 1em 0.5em;
+  padding: 0 1em;
 }
 
 @media (max-width: 640px) {
@@ -90,7 +141,7 @@ nav {
     font-size: 24px;
   }
   .menu {
-    padding: 5px;
+    padding: 0 10px;
   }
 }
 
@@ -100,7 +151,7 @@ nav {
     font-size: 16px;
   }
   .menu {
-    padding: 5px;
+    padding: 0 10px;
   }
 }
 </style>
