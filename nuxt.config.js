@@ -12,18 +12,17 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/nuxtjs_portfolio/favicon.ico' },
       { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.6.1/css/all.css"},
-    ]
+    ],
   },
   //
-  // router: {
-  //   base: '/nuxtjs_portfolio/'
-  // },
+  router: {
+    base: '/nuxtjs_portfolio/'
+  },
   //
   plugins: [
     { src: '~/plugins/ga.js', mode: 'client' },
     { src: '~/plugins/vue-carousel', mode: 'client' },
     { src: '~/plugins/vue-smoothscroll', mode: 'client' },
-    { src: '~/plugins/jquery-3.4.1.min.js', mode: 'client' },
     { src: '~/plugins/TweenMax.min.js', mode: 'client' },
   ],
 
