@@ -1,6 +1,18 @@
 <template>
   <div class="main">
       <div class="mainview" @click='click'>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+          <div class="target"></div>
+
           <div class="maintext" >
               <div class="box">&nbsp;{{message[0]}}</div>
               <div class="box">&nbsp;{{message[1]}}</div>
@@ -29,7 +41,6 @@
 
 <script>
 import {mapGetters, mapMutations} from 'vuex'
-import {TweenMax, Expo, Elastic} from 'gsap'
 
 export default {
   name: 'Mainview',
@@ -98,9 +109,10 @@ export default {
 }
 .mainview {
   height: 100%;
-  background-image: url("../assets/main.jpg");
+  background-color: black;
+  /* background-image: url("../assets/main.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .maintext {

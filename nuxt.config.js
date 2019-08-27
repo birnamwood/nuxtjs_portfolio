@@ -22,7 +22,9 @@ module.exports = {
   plugins: [
     { src: '~/plugins/ga.js', mode: 'client' },
     { src: '~/plugins/vue-carousel', mode: 'client' },
-    { src: '~/plugins/vue-smoothscroll', mode: 'client' }
+    { src: '~/plugins/vue-smoothscroll', mode: 'client' },
+    { src: '~/plugins/jquery-3.4.1.min.js', mode: 'client' },
+    { src: '~/plugins/TweenMax.min.js', mode: 'client' },
   ],
 
 
