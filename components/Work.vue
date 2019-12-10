@@ -13,6 +13,7 @@
 <script>
 import Workbox from './Workbox.vue'
 import PortfolioImage from "@/assets/portfolio.png"
+import FlatImage from "@/assets/flat.png"
 import NoImage from "@/assets/no_image.png"
 
 export default {
@@ -30,18 +31,18 @@ export default {
           url: "https://birnamwood.github.io/nuxtjs_portfolio/",
           src_site: "Github",
           src: "https://github.com/birnamwood/nuxtjs_portfolio/",
-          skill: "HTTPS / CSS / Vue.js / Nuxt.js",
+          skill: "HTML / CSS / Vue.js / Nuxt.js",
           text: "ポートフォリオ公開用サイトです。Vue.jsで作成し、Nuxt.jsに移行しました。",
         },
         {
-          name: "検査結果照会システム",
-          image: NoImage,
-          url_site: "",
-          url: "",
-          src_site: "",
-          src: "",
-          skill: "RPG Ⅳ / LongRange / iPhone",
-          text: "iPhoneで臨床検査の結果を照会するシステムです。設計からリリースまで一人で担当しました。",
+          name: "FLAT",
+          image: FlatImage,
+          url_site: "https://www.birnamwood-flat.com/",
+          url: "https://www.birnamwood-flat.com/",
+          src_site: "https://github.com/birnamwood/flat",
+          src: "https://github.com/birnamwood/flat",
+          skill: "HTML / CSS / Rails / JavaScript / Vue.js",
+          text: "旅行先の写真を投稿するサイトです。インフラはAWSを使用しています。",
         },
       ],
     }

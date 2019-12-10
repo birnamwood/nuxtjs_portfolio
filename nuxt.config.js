@@ -15,9 +15,9 @@ module.exports = {
     ],
   },
   //
-  router: {
-    base: '/nuxtjs_portfolio/'
-  },
+  // router: {
+  //   base: '/nuxtjs_portfolio/'
+  // },
   //
   plugins: [
     { src: '~/plugins/ga.js', mode: 'client' },
