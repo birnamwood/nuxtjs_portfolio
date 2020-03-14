@@ -27,18 +27,15 @@ module.exports = {
   ],
   //
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv'
   ],
   manifest: {
     name: "Portfolio",
     lang: 'ja',
-    icons: [
-      {
-        src: "static/icon.png",
-        sizes: "512x512",
-        type: "image/png",
-      }
-    ]
+  },
+  workbox: {
+    dev: true,
   },
   //
 
