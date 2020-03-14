@@ -25,8 +25,21 @@ module.exports = {
     { src: '~/plugins/vue-smoothscroll', mode: 'client' },
     { src: '~/plugins/TweenMax.min.js', mode: 'client' },
   ],
-
-
+  //
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  manifest: {
+    name: "Portfolio",
+    lang: 'ja',
+    icons: [
+      {
+        src: "static/icon.png",
+        sizes: "512x512",
+        type: "image/png",
+      }
+    ]
+  },
   //
 
   /*
