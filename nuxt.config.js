@@ -10,14 +10,14 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/nuxtjs_portfolio/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.6.1/css/all.css"},
     ],
   },
   //
-  router: {
-    base: '/nuxtjs_portfolio/'
-  },
+  // router: {
+  //   base: '/nuxtjs_portfolio/'
+  // },
   //
   plugins: [
     { src: '~/plugins/ga.js', mode: 'client' },
