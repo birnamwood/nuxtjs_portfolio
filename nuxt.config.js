@@ -43,7 +43,7 @@ module.exports = {
   workbox: {
     dev: true,
   },
-  onesignal: {
+  oneSignal: {
     init: {
       appId: "45b9adbb-0ded-48d7-b579-10d7e736f329",
       allowLocalhostAsSecureOrigin: true,
