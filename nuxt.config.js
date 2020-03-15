@@ -1,4 +1,8 @@
+require('dotenv').config();
+const {ONESIGNALID} = process.env;
+
 module.exports = {
+
   /*
   ** Headers of the page
   */
@@ -28,7 +32,9 @@ module.exports = {
   //
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/onesignal',
+    '@nuxtjs/axios'
   ],
   manifest: {
     name: "Portfolio",
@@ -36,6 +42,15 @@ module.exports = {
   },
   workbox: {
     dev: true,
+  },
+  onesignal: {
+    init: {
+      appId: ONESIGNALID,
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: true
+      }
+    }
   },
   //
 
