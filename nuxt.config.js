@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {ONESIGNALAPIKEY} = process.env;
+const {ONESIGNALID} = process.env;
 
 module.exports = {
 
