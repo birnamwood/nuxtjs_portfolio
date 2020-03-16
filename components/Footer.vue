@@ -21,7 +21,7 @@ export default {
         Authorization: 'Basic ${process.env.ONESINGAL_API_KEY}'
       },
       data: {
-        app_id: process.env.ONESIGNAL_APP_ID,
+        app_id: '45b9adbb-0ded-48d7-b579-10d7e736f329',
         headings: {
           en: 'notification test',
           ja: '通知テスト'
