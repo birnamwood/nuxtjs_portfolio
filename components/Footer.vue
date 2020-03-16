@@ -2,12 +2,41 @@
 <footer>
     <nav>
       <p>© 2019</P>
+      <a href="" @click="push">Push</a>
     </nav>
   </footer>
 </template>
 
 <script>
+import axios from 'axios'
 
+export default {
+  methods: {
+    push() {
+      var params = {
+      method: 'post',
+      url: 'https://onesignal.com/api/v1/notifications',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Basic yyyyyyyyyyyyyyyyyyyyyyyyy'
+      },
+      data: {
+        app_id: process.env.API,
+        headings: {
+          en: 'notification test',
+          ja: '通知テスト'
+        },
+        contents: {
+          en: 'This is notification test',
+          ja: '通知テスト'
+        },
+        tags: [{}]
+      }
+    }
+    axios(params)
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

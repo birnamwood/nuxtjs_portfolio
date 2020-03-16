@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {ONESIGNALID} = process.env;
+const {ONESIGNAL_APPKEY} = process.env;
 
 module.exports = {
 
@@ -75,6 +75,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  env: {
+    ONESIGNAL_APPKEY
+  },
 }
 
