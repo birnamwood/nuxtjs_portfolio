@@ -30,10 +30,11 @@ export default {
           en: 'This is notification test',
           ja: '通知テスト'
         },
-        tags: [{}]
       }
     }
-    axios(params)
+    axios(params).then(res => {
+      console.log(res.data);
+    })
     }
   }
 }
