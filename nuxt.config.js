@@ -1,8 +1,11 @@
 require('dotenv').config();
-const {ONESIGNAL_APPKEY} = process.env;
+const {ONESIGNAL_APP_ID} = process.env;
 
 module.exports = {
 
+  env: {
+    ONESIGNAL_APP_ID
+  },
   /*
   ** Headers of the page
   */
@@ -45,7 +48,7 @@ module.exports = {
   },
   oneSignal: {
     init: {
-      appId: "45b9adbb-0ded-48d7-b579-10d7e736f329",
+      appId: process.env.ONESIGNAL_APP_ID,
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
         disable: true
@@ -76,9 +79,6 @@ module.exports = {
         })
       }
     }
-  },
-  env: {
-    ONESIGNAL_APPKEY
   },
 }
 

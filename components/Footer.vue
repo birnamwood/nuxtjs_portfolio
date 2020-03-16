@@ -18,10 +18,10 @@ export default {
       url: 'https://onesignal.com/api/v1/notifications',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Basic yyyyyyyyyyyyyyyyyyyyyyyyy'
+        Authorization: 'Basic ${process.env.ONESINGAL_API_KEY}'
       },
       data: {
-        app_id: process.env.API,
+        app_id: process.env.ONESIGNAL_APP_ID,
         headings: {
           en: 'notification test',
           ja: '通知テスト'
