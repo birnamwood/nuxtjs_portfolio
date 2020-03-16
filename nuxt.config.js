@@ -50,7 +50,8 @@ module.exports = {
       welcomeNotification: {
         disable: true
       }
-    }
+    },
+    importScripts: ['sw.js'],
   },
   //
 
