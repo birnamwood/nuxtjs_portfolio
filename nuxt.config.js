@@ -1,10 +1,12 @@
 require('dotenv').config();
 const {ONESIGNAL_APP_ID} = process.env;
+const {ONESIGNAL_API_KEY} = process.env;
 
 module.exports = {
 
   env: {
-    ONESIGNAL_APP_ID
+    ONESIGNAL_APP_ID,
+    ONESIGNAL_API_KEY,
   },
   /*
   ** Headers of the page
